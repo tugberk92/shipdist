@@ -12,7 +12,7 @@ env:
 #!/bin/sh
 rsync -a $SOURCEDIR/* .
 make
-
+cp -r * $INSTALLROOT
 # Modulefile
 MODULEDIR="$INSTALLROOT/etc/modulefiles"
 MODULEFILE="$MODULEDIR/$PKGNAME"
